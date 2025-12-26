@@ -1,4 +1,4 @@
-# 💬 FlaChat um chat em Tempo Real - WebSocket
+# <img align="center" alt="gui-java" height="50" width="40"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Flamengo_braz_logo.svg/500px-Flamengo_braz_logo.svg.png?20251130020043"/> FlaChat um chat em Tempo Real - WebSocket 
 
 Aplicação de chat em tempo real desenvolvida com Spring Boot e WebSocket, permitindo comunicação instantânea entre múltiplos usuários em diferentes salas.
 
