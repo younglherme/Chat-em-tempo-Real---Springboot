@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlaChat</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="chat-header">
+        <h1>FlaChat</h1>
+      </div>
+
+      <div class="login-container" id="loginContainer">
+        <h2>Entrar no Chat</h2>
+        <input
+          type="text"
+          id="username"
+          placeholder="Digite seu nome"
+          autocomplete="off"
+        />
+        <input
+          type="text"
+          id="roomName"
+          placeholder="Nome da sala (ex: geral)"
+          value="geral"
+          autocomplete="off"
+        />
+        <button onclick="connect()">Entrar</button>
+      </div>
+
+      <div class="chat-container" id="chatContainer" style="display: none">
+        <div class="room-info">
+          <span id="userInfo"></span>
+          <button onclick="disconnect()" class="disconnect-btn">Sair</button>
+        </div>
+
+        <div class="messages-container" id="messagesContainer"></div>
+
+        <div class="input-container">
+          <input
+            type="text"
+            id="messageInput"
+            placeholder="Digite sua mensagem..."
+            autocomplete="off"
+          />
+          <button onclick="sendMessage()">Enviar</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stompjs@2.3.3/lib/stomp.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
