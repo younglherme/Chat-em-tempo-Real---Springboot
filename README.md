@@ -30,34 +30,7 @@ Este é um sistema de chat moderno que utiliza WebSocket para comunicação bidi
 - **HTML5** - Estrutura da página
 - **CSS3** - Estilização moderna com gradientes
 - **JavaScript (ES6)** - Lógica da aplicação
-- **SockJS Client** - Cliente WebSocket
-- **STOMP.js** - Cliente STOMP para JavaScript
 
-## 📁 Estrutura do Projeto
-
-```
-demo/
-├── src/
-│   ├── main/
-│   │   ├── java/com/example/demo/
-│   │   │   ├── ChatMessage.java           # Modelo de mensagem
-│   │   │   ├── DemoApplication.java       # Classe principal
-│   │   │   ├── config/
-│   │   │   │   └── WebSocketConfig.java   # Configuração WebSocket
-│   │   │   └── Controller/
-│   │   │       └── ChatController.java    # Controlador de mensagens
-│   │   └── resources/
-│   │       └── application.properties     # Configurações da aplicação
-│   └── test/
-│       └── java/com/example/demo/
-│           └── DemoApplicationTests.java  # Testes
-├── Front-end/
-│   ├── index.html                         # Interface do chat
-│   ├── style.css                          # Estilos da aplicação
-│   └── script.js                          # Lógica do cliente
-├── pom.xml                                # Dependências Maven
-└── README.md                              # Este arquivo
-```
 
 ## 🚀 Como Executar
 
@@ -93,14 +66,6 @@ mvnw.cmd spring-boot:run
 3. **Abra o frontend**
 - Navegue até a pasta `Front-end/`
 - Abra o arquivo `index.html` no navegador
-- Ou use um servidor local:
-```bash
-# Com Python
-python -m http.server 3000
-
-# Com Node.js
-npx serve Front-end
-```
 
 4. **Acesse a aplicação**
 - Backend: `http://localhost:8080`
@@ -141,9 +106,6 @@ npx serve Front-end
 ## 🎨 Interface
 
 A interface foi desenvolvida com design moderno apresentando:
-- Gradiente roxo/azul
-- Animações suaves
-- Responsividade
 - Mensagens diferenciadas (próprias vs outros)
 - Scrollbar customizada
 - Timestamp nas mensagens
@@ -158,36 +120,10 @@ registry.addEndpoint("/ws")
     .withSockJS();
 ```
 
-## 📦 Dependências Principais
 
-```xml
-<dependencies>
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-websocket</artifactId>
-    </dependency>
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-webmvc</artifactId>
-    </dependency>
-</dependencies>
-```
-
-## 🤝 Contribuindo
-
-Contribuições são bem-vindas! Sinta-se à vontade para:
-- Reportar bugs
-- Sugerir novas funcionalidades
-- Enviar pull requests
-
-## 📄 Licença
-
-Este projeto é de código aberto e está disponível para uso educacional.
-
-## 👨‍💻 Autor
 
 Desenvolvido como projeto de demonstração de WebSocket com Spring Boot.
 
 ---
 
-**Nota:** Certifique-se de que o servidor backend está rodando na porta 8080 antes de abrir o frontend.
+Certifique-se de que o servidor backend está rodando na porta 8080 antes de abrir o frontend.
