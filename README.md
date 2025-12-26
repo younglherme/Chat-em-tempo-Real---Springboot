@@ -1,4 +1,4 @@
-# 💬 Chat em Tempo Real - WebSocket
+# 💬 FlaChat um chat em Tempo Real - WebSocket
 
 Aplicação de chat em tempo real desenvolvida com Spring Boot e WebSocket, permitindo comunicação instantânea entre múltiplos usuários em diferentes salas.
 
