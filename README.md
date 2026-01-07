@@ -1,4 +1,4 @@
-# <img align="center" alt="gui-java" height="50" width="40"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Flamengo_braz_logo.svg/500px-Flamengo_braz_logo.svg.png?20251130020043"/> FlaChat um chat em Tempo Real
+# <img align="center" alt="gui-java" height="40" width="30"  src="https://www.pikpng.com/pngl/b/487-4873071_clube-de-regatas-do-flamengo-logo-clipart.png"/> FlaChat um chat em Tempo Real
 
 Aplicação de chat em tempo real desenvolvida com Spring Boot e WebSocket, permitindo comunicação instantânea entre múltiplos usuários em diferentes salas.
 
